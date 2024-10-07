@@ -32,10 +32,10 @@ if gen:
 
 reset_btn = st.button('Reset')
 if reset_btn:
-    st.text_input('Personality of NPC', key='personality')
-    st.text_area('Background of NPC', key='background')
-    st.number_input('Depth of conversation', min_value=1, max_value=10, value=3, key='depth')
-    st.text_input('Player Tag', key='player_tag')
-    st.text_input('End Goal', key='end_goal')
+    personality = ''
+    background = ''
+    depth = 3
+    player_tag = ''
+    end_goal = ''
     #hide generate button
     gen = False
