@@ -38,4 +38,4 @@ if reset_btn:
     st.text_input('Player Tag', key='player_tag')
     st.text_input('End Goal', key='end_goal')
     #hide generate button
-    st.button('Generate Dialogue Tree', disabled=True)
+    gen = False
