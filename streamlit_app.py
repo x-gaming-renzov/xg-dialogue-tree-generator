@@ -21,8 +21,8 @@ depth = st.number_input('Depth of conversation', min_value=1, max_value=10, valu
 player_tag = st.text_input('Player Tag', key='player_tag')
 end_goal = st.text_input('End Goal', key='end_goal')
 
-st.button('Generate Dialogue Tree')
-if st.button:
+gen = st.button('Generate Dialogue Tree')
+if gen:
     st.write('Dialogue Tree:')
     st.write(f'Personality: {personality}')
     st.write(f'Background: {background}')
