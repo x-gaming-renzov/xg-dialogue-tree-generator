@@ -13,3 +13,10 @@ with st.expander('How to use this app:'):
              eg. if player has item x, go to branch 1, else go to branch 2.
     5. EndGoal : What you want to achieve from this conversation. Default : End conversation.
     ''')
+
+st.header('Dialogue Tree Generator')
+personality = st.text_input('Personality of NPC', key='personality')
+background = st.text_area('Background of NPC', key='background')
+depth = st.number_input('Depth of conversation', min_value=1, max_value=10, value=3, key='depth')
+player_tag = st.text_input('Player Tag', key='player_tag')
+end_goal = st.text_input('End Goal', key='end_goal')
