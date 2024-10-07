@@ -22,20 +22,4 @@ player_tag = st.text_input('Player Tag', key='player_tag')
 end_goal = st.text_input('End Goal', key='end_goal')
 
 gen = st.button('Generate Dialogue Tree')
-if gen:
-    st.write('Dialogue Tree:')
-    st.write(f'Personality: {personality}')
-    st.write(f'Background: {background}')
-    st.write(f'Depth: {depth}')
-    st.write(f'Player Tag: {player_tag}')
-    st.write(f'End Goal: {end_goal}')
 
-reset_btn = st.button('Reset')
-if reset_btn:
-    personality = ''
-    background = ''
-    depth = 3
-    player_tag = ''
-    end_goal = ''
-    #hide generate button
-    gen = False
