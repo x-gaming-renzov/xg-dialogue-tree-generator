@@ -29,3 +29,4 @@ if gen:
     st.write(f'Depth: {depth}')
     st.write(f'Player Tag: {player_tag}')
     st.write(f'End Goal: {end_goal}')
+    gen = False
